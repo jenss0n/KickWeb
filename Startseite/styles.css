@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    cursor: url('/Kickweb_Jennifer/Sprint_3/Images/Cursor_green.png'), auto;
 }
 
 a{
@@ -57,3 +58,40 @@ h3{
     height: 30%;
 
 }
+
+.menu span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menu span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #ffffff;
+  }
+  
+  .menu span:before {
+    left: -2.5px;
+  }
+  .menu span:after {
+    right: 2.5px;
+    background: #ffffff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .menu span:hover:before {
+    background: #ffffff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .menu span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
